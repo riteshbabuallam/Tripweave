@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2b8cee",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              display: ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body
+    class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white min-h-screen flex flex-col overflow-x-hidden group/design-root"
+  >
+    <div class="layout-container flex h-full grow flex-col">
+      <!-- Header -->
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7eef4] dark:border-b-[#283039] px-4 md:px-10 py-3 bg-background-light dark:bg-background-dark sticky top-0 z-50"
+      >
+        <div class="flex items-center gap-4 text-[#111418] dark:text-white">
+          <div class="size-6 text-primary">
+            <svg
+              fill="none"
+              viewbox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+          <h2
+            class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]"
+          >
+            TripWeave
+          </h2>
+        </div>
+        <div class="flex flex-1 justify-end gap-8">
+          <div
+            class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 ring-2 ring-[#e7eef4] dark:ring-[#283039]"
+            data-alt="User profile picture placeholder"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxviVaEJluAe7vIdDjDw8yVRw7ofMj-z0WRHpCrHItPMy_TIXeFZdIlC9-9h6mCAzqc8TFOD9uEkY_TEbyUAQrQ1Jcfj1VCtotx8Vn1or2Rz36w0IyuIudz6e-vbkTA19s6bIkkeGTdZG1_z8GLvKa8Ughrg8YgSqC_8P2XhdDom6wPNg5Zpc1g-n4Wm46gX4RPehUgRkd9tPK8Wo4cXQ5JCWbKwbS8r3NRSCqCIW27Cacc5t1yQG6_0ympBvfw9OLoznFEkerFbru');
+            "
+          ></div>
+        </div>
+      </header>
+      <!-- Main Content -->
+      <div class="flex flex-1 justify-center py-5 px-4 md:px-40">
+        <div
+          class="layout-content-container flex flex-col max-w-[960px] flex-1"
+        >
+          <!-- Page Heading -->
+          <div class="flex flex-wrap justify-between gap-3 p-4">
+            <div class="flex min-w-72 flex-col gap-3">
+              <h1
+                class="text-[#111418] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]"
+              >
+                Complete Your Booking
+              </h1>
+              <p
+                class="text-[#637588] dark:text-[#9dabb9] text-base font-normal leading-normal"
+              >
+                New York → London → Agra
+              </p>
+            </div>
+          </div>
+          <!-- Disclaimer Action Panel -->
+          <div class="p-4">
+            <div
+              class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 rounded-xl border border-[#dce0e5] dark:border-[#3b4754] bg-white dark:bg-[#18212b] p-5 shadow-sm"
+            >
+              <div class="flex gap-4">
+                <div
+                  class="text-[#111418] dark:text-white flex items-center justify-center rounded-lg bg-[#f0f2f4] dark:bg-[#283039] shrink-0 size-12"
+                >
+                  <span class="material-symbols-outlined text-[24px]"
+                    >info</span
+                  >
+                </div>
+                <div class="flex flex-col gap-1">
+                  <p
+                    class="text-[#111418] dark:text-white text-base font-bold leading-tight"
+                  >
+                    Important
+                  </p>
+                  <p
+                    class="text-[#637588] dark:text-[#9dabb9] text-sm md:text-base font-normal leading-normal"
+                  >
+                    TripWeave is a planning tool. Please finalize your tickets
+                    on the official carrier websites linked below.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Booking Links List -->
+          <div class="flex flex-col gap-4 p-4">
+            <h3
+              class="text-[#111418] dark:text-white text-lg font-bold leading-tight px-2"
+            >
+              Your Journey Legs
+            </h3>
+            <!-- Flight Leg Item -->
+            <div
+              class="flex flex-col md:flex-row gap-4 bg-white dark:bg-[#18212b] px-4 py-4 rounded-xl border border-[#dce0e5] dark:border-[#283039] justify-between items-start md:items-center shadow-sm"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="text-[#111418] dark:text-white flex items-center justify-center rounded-lg bg-[#f0f2f4] dark:bg-[#283039] shrink-0 size-12"
+                >
+                  <span class="material-symbols-outlined text-[24px]"
+                    >flight</span
+                  >
+                </div>
+                <div class="flex flex-1 flex-col justify-center">
+                  <div class="flex items-center gap-2">
+                    <p
+                      class="text-[#111418] dark:text-white text-base font-medium leading-normal"
+                    >
+                      Flight AA123
+                    </p>
+                    <span
+                      class="inline-flex items-center rounded-full bg-[#e7f3ff] dark:bg-[#1a3b5c] px-2 py-0.5 text-xs font-medium text-primary"
+                      >Ready to Book</span
+                    >
+                  </div>
+                  <p
+                    class="text-[#637588] dark:text-[#9dabb9] text-sm font-normal leading-normal mt-1"
+                  >
+                    NYC (JFK) to LHR • 10:00 AM - 9:30 PM
+                  </p>
+                </div>
+              </div>
+              <div class="w-full md:w-auto shrink-0 mt-2 md:mt-0">
+                <button
+                  class="flex w-full md:w-auto min-w-[140px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg h-10 px-5 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal"
+                >
+                  <span>Book on AA.com</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >open_in_new</span
+                  >
+                </button>
+              </div>
+            </div>
+            <!-- Train Leg Item -->
+            <div
+              class="flex flex-col md:flex-row gap-4 bg-white dark:bg-[#18212b] px-4 py-4 rounded-xl border border-[#dce0e5] dark:border-[#283039] justify-between items-start md:items-center shadow-sm"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="text-[#111418] dark:text-white flex items-center justify-center rounded-lg bg-[#f0f2f4] dark:bg-[#283039] shrink-0 size-12"
+                >
+                  <span class="material-symbols-outlined text-[24px]"
+                    >train</span
+                  >
+                </div>
+                <div class="flex flex-1 flex-col justify-center">
+                  <div class="flex items-center gap-2">
+                    <p
+                      class="text-[#111418] dark:text-white text-base font-medium leading-normal"
+                    >
+                      Shatabdi Express
+                    </p>
+                    <span
+                      class="inline-flex items-center rounded-full bg-[#e7f3ff] dark:bg-[#1a3b5c] px-2 py-0.5 text-xs font-medium text-primary"
+                      >Ready to Book</span
+                    >
+                  </div>
+                  <p
+                    class="text-[#637588] dark:text-[#9dabb9] text-sm font-normal leading-normal mt-1"
+                  >
+                    DEL to AGRA • 2:00 PM - 4:15 PM
+                  </p>
+                </div>
+              </div>
+              <div class="w-full md:w-auto shrink-0 mt-2 md:mt-0">
+                <button
+                  class="flex w-full md:w-auto min-w-[140px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg h-10 px-5 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal"
+                >
+                  <span>Book on IRCTC</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >open_in_new</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Actions -->
+          <div
+            class="flex flex-col-reverse md:flex-row justify-between items-center gap-4 p-4 mt-4"
+          >
+            <button
+              class="w-full md:w-auto text-[#637588] dark:text-[#9dabb9] hover:text-[#111418] dark:hover:text-white text-sm font-medium leading-normal underline decoration-dashed underline-offset-4 cursor-pointer transition-colors"
+            >
+              Copy all links to clipboard
+            </button>
+            <div class="flex gap-4 w-full md:w-auto">
+              <button
+  onclick="location.href='tripweave_landing_page.html'"
+  class="px-6 py-3 rounded-lg bg-primary text-white font-bold"
+>
+  Done
+</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
